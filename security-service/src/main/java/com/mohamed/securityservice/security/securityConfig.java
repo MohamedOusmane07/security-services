@@ -22,7 +22,7 @@ import static org.springframework.security.config.http.SessionCreationPolicy.*;
 public class securityConfig {
 
     private final JwtAuthenticationFilter jwtAuthFilter;
-    private AuthenticationProvider authenticationProvider;
+    private final AuthenticationProvider authenticationProvider;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
